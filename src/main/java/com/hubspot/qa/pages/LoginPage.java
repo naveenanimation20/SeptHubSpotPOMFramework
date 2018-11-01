@@ -40,5 +40,8 @@ public class LoginPage extends BasePage {
 		return new HomePage(driver);
 	}
 	
+	public void loginLogoImageVerify(){
+		System.out.println("loginLogoImageVerify");
+	}
 
 }
