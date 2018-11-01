@@ -1,0 +1,4 @@
+com/hubspot/qa/tests/LoginTest.class
+com/hubspot/qa/tests/ContactsPageTest.class
+com/hubspot/qa/tests/DealsPageTest.class
+com/hubspot/qa/tests/HomePageTest.class
