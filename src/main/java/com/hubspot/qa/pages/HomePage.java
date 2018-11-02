@@ -35,8 +35,8 @@ public class HomePage extends BasePage{
 	
 	
 	public String getHomePageTitle(){
-		WebDriverWait wait = new WebDriverWait(driver,15);
-		wait.until(ExpectedConditions.titleIs(Constants.HOME_PAGE_TITLE));
+	WebDriverWait wait = new WebDriverWait(driver,15);
+	wait.until(ExpectedConditions.titleIs(Constants.HOME_PAGE_TITLE));
 		return driver.getTitle();
 	}
 	
