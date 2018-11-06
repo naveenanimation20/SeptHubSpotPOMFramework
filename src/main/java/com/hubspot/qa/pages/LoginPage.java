@@ -33,7 +33,9 @@ public class LoginPage extends BasePage {
 	}
 	
 	public HomePage login(String username, String pwd){
+		userName.clear();
 		userName.sendKeys(username);
+		password.clear();
 		password.sendKeys(pwd);
 		loginButton.click();
 		

@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Hub Spot Test Automation Suite">
+<suite name="Hub Spot Test Automation Suite" parallel="methods" thread-count="3">
+
+	<listeners>
+		<listener
+			class-name="com.hubspot.qa.ExtentReporterListner.ExtentReporterNG" />
+	</listeners>
+	
 	<test name="Hub Spot Regression Test Cases">
 		<classes>
 			<class name="com.hubspot.qa.tests.LoginTest"></class>
 			<class name="com.hubspot.qa.tests.HomePageTest"></class>
-<!-- 			<class name="com.hubspot.qa.tests.ContactsPageTest"></class>
- -->			<class name="com.hubspot.qa.tests.DealsPageTest"></class>
+			<!-- <class name="com.hubspot.qa.tests.ContactsPageTest"></class> -->
+			<class name="com.hubspot.qa.tests.DealsPageTest"></class>
 		</classes>
 	</test>
+	
+	
 </suite>
